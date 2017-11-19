@@ -10,6 +10,21 @@
 
 	<package name="shoppinglist" extends="struts-default">
 
+
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="securityerror">/securityerror.jsp</result>
+		</global-results>
+
+
+		<global-exception-mappings>
+			<exception-mapping
+				exception="org.apache.struts.register.exceptions.SecurityBreachException"
+				result="securityerror" />
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>
+		
 		<action name="index">
 			<result>/index.jsp</result>
 		</action>
@@ -31,5 +46,7 @@
 		</action>
 
 	</package>
+
+
 
 </struts>
