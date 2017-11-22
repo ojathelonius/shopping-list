@@ -30,6 +30,10 @@
 	<p>
 		<a href="${registerInputLinkFR}">Enregistrez-vous</a>
 	</p>
+	<s:url action="editInfo" var="editInfoLink" />
+	<p>
+		<a href="${editInfoLink}">Editez vos informations</a>
+	</p>
 	<p>Get your own personal hello by filling out and submitting this
 		form.</p>
 	<s:form action="hello">
