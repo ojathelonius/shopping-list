@@ -4,9 +4,18 @@
 
 <tiles-definitions>
 
-    <definition name="fooLayout" template="/WEB-INF/tiles/HelloWorld.jsp">
-        <put-attribute name="title" value="Tiles Sample"/>
-        <put-attribute name="header" value="/WEB-INF/tiles/header.jsp"/>
-    </definition>
+	<definition name="default" template="/WEB-INF/tiles/template.jsp">
+		<!-- Order seems to matter in the definition : put-attribute first, then put-list-attribute -->
+		<put-attribute name="head" value="/WEB-INF/tiles/head.jsp" />
+		<put-attribute name="title" value="Shopping list" cascade="true" type="string" />
+		<put-attribute name="body" value="/WEB-INF/tiles/HelloWorld.jsp" />
+		
+		<put-list-attribute name="cssList" cascade="true">
+			<add-attribute value="/css/lib/bootstrap.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="jsList" cascade="true">
+			<add-attribute value="/js/lib/bootstrap.min.js" />
+		</put-list-attribute>
+	</definition>
 
 </tiles-definitions>

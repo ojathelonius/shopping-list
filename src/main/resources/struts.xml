@@ -40,7 +40,7 @@
 
 
 		<action name="hello" class="fr.johanet.shoppinglist.action.HelloWorldAction" method="execute">
-			<result name="success" type="tiles">fooLayout</result>
+			<result name="success" type="tiles">default</result>
 		</action>
 
 		<action name="register" class="fr.johanet.shoppinglist.action.Register" method="execute">
