@@ -11,6 +11,6 @@
 
     <p>Your registration information: <s:property value="personBean" /> </p>
 
-    <p><a href="<s:url action='index' />" >Return to home page</a>.</p>
+    <p><a href="<s:url action='home/helloworld' />" >Return to home page</a>.</p>
   </body>
 </html>

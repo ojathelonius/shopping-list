@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -10,9 +11,9 @@
 <body>
 	<h1>Welcome To Struts 2!</h1>
 	<p>
-		<a href="<s:url action='hello'/>">Hello World</a>
+		<a href="<s:url action='helloworld'/>">Hello World</a>
 	</p>
-	<s:url action="hello" var="helloLink">
+	<s:url action="helloworld" var="helloLink">
 		<s:param name="userName">Bruce Phillips</s:param>
 	</s:url>
 	<p>
