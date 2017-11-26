@@ -1,6 +1,6 @@
-# Shopping list
+# JOHANET.FR
 
-Implementing a shopping list Java web app, which will allow the household to let me know what we have to buy next time we get groceries.
+Working on my own website using recent technologies such as Struts2.
 
 TODO :
 - Define a Postgres database structure and connect it to the app through Hibernate
