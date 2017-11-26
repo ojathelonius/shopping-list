@@ -14,6 +14,7 @@
 		<!-- CSS -->
 		<put-list-attribute name="cssList" cascade="true">
 			<add-attribute value="/css/lib/bootstrap.min.css" />
+			<add-attribute value="/css/default.css" />
 		</put-list-attribute>
 
 		<!-- JS -->
