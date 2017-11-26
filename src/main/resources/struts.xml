@@ -7,7 +7,7 @@
 
 	<constant name="struts.devMode" value="true" />
 	<constant name="struts.custom.i18n.resources" value="global" />
-	<!--  Setting the action extension to "" causes issues with css/js as Struts will try to serve these as actions -->
+	<!-- Setting the action extension to "" causes issues with css/js as Struts will try to serve these as actions -->
 	<constant name="struts.action.extension" value="," />
 
 	<package name="johanetfr" namespace="/" extends="struts-default">
@@ -26,40 +26,17 @@
 		<default-interceptor-ref name="appDefaultStack" />
 
 		<global-results>
-			<result name="error">/error.jsp</result>
-			<result name="securityerror">/securityerror.jsp</result>
+			<result name="error">error</result>
 		</global-results>
 
 
 		<global-exception-mappings>
-			<exception-mapping exception="org.apache.struts.register.exceptions.SecurityBreachException" result="securityerror" />
 			<exception-mapping exception="java.lang.Exception" result="error" />
 		</global-exception-mappings>
 
 		<action name="index" class="fr.johanet.johanetfr.action.IndexAction">
-			<result>/thankyou.jsp</result>
+			<result name="success" type="tiles">default</result>
 		</action>
-
-
-		<action name="register" class="fr.johanet.johanetfr.action.Register" method="execute">
-			<result name="success">/thankyou.jsp</result>
-			<result name="input">/register.jsp</result>
-		</action>
-
-		<action name="editInfo" class="fr.johanet.johanetfr.action.EditInfoAction" method="execute">
-			<result name="success">/edit.jsp</result>
-		</action>
-
-		<action name="registerInput" class="fr.johanet.johanetfr.action.Register" method="input">
-			<result name="input">/register.jsp</result>
-		</action>
-
-		<action name="actionspecificexception" class="fr.johanet.johanetfr.action.Register" method="throwSecurityException">
-			<exception-mapping exception="fr.johanet.johanetfr.exceptions.SecurityBreachException" result="login" />
-			<result>/register.jsp</result>
-			<result name="login">/login.jsp</result>
-		</action>
-
 
 	</package>
 	<include file="struts/struts-home.xml"></include>

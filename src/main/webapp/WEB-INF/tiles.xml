@@ -4,18 +4,26 @@
 
 <tiles-definitions>
 
-	<definition name="default" template="/WEB-INF/tiles/template.jsp">
-		<!-- Order seems to matter in the definition : put-attribute first, then put-list-attribute -->
-		<put-attribute name="head" value="/WEB-INF/tiles/head.jsp" />
-		<put-attribute name="title" value="Shopping list" cascade="true" type="string" />
-		<put-attribute name="body" value="/WEB-INF/tiles/HelloWorld.jsp" />
-		
+<!--  Cascade parameter makes the value available to nested classes -->
+	<definition name="default" template="/WEB-INF/tiles/default.jsp">
+		<put-attribute name="title" value="Home" type="string" cascade="true"/>
+		<put-attribute name="header" value="/WEB-INF/tiles/template/header.jsp" />
+		<put-attribute name="head" value="/WEB-INF/tiles/template/head.jsp" />
+		<put-attribute name="body" value="/WEB-INF/tiles/template/body.jsp" />
+
+		<!-- CSS -->
 		<put-list-attribute name="cssList" cascade="true">
 			<add-attribute value="/css/lib/bootstrap.min.css" />
 		</put-list-attribute>
+
+		<!-- JS -->
 		<put-list-attribute name="jsList" cascade="true">
 			<add-attribute value="/js/lib/bootstrap.min.js" />
 		</put-list-attribute>
+	</definition>
+
+	<definition name="error" extends="default">
+		<put-attribute name="body" value="/WEB-INF/tiles/template/error.jsp" />
 	</definition>
 
 </tiles-definitions>
