@@ -1,4 +1,4 @@
-package fr.johanet.shoppinglist.model;
+package fr.johanet.johanetfr.model;
 
 public class MessageStore {
 

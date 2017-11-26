@@ -1,8 +1,8 @@
-package fr.johanet.shoppinglist.action;
+package fr.johanet.johanetfr.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import fr.johanet.shoppinglist.model.Person;
+import fr.johanet.johanetfr.model.Person;
 
 public class EditInfoAction extends ActionSupport {
 

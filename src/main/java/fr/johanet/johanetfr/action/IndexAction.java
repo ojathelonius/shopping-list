@@ -1,4 +1,4 @@
-package fr.johanet.shoppinglist.action;
+package fr.johanet.johanetfr.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
