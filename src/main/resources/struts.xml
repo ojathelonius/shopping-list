@@ -11,7 +11,7 @@
 	<constant name="struts.action.extension" value="," />
 	<constant name="struts.ui.theme" value="simple" />
 	
-	<package name="johanetfr" namespace="/" extends="struts-default">
+	<package name="struts2showcase" namespace="/" extends="struts-default">
 		<result-types>
 			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
 		</result-types>
@@ -35,7 +35,7 @@
 			<exception-mapping exception="java.lang.Exception" result="error" />
 		</global-exception-mappings>
 
-		<action name="index" class="fr.johanet.johanetfr.action.IndexAction">
+		<action name="index" class="fr.johanet.struts2showcase.action.IndexAction">
 			<result name="success" type="tiles">default</result>
 		</action>
 

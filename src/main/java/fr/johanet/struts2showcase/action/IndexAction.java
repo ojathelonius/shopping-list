@@ -1,4 +1,4 @@
-package fr.johanet.johanetfr.action;
+package fr.johanet.struts2showcase.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 

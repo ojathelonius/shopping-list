@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.johanet</groupId>
-	<artifactId>johanetfr</artifactId>
+	<artifactId>struts2-showcase</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>johanet.fr</name>
+	<name>struts2-showcase</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -50,7 +50,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>johanetfr</finalName>
+		<finalName>struts2showcase</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
