@@ -13,7 +13,7 @@
 <%--  Meta data, CSS/JS loaders --%>
 <tiles:insertAttribute name="head" />
 <body>
-	<%-- <tiles:insertAttribute name="header" /> --%>
+	<tiles:insertAttribute name="header" />
 	<tiles:insertAttribute name="body" />
 </body>
 </html>

@@ -9,7 +9,8 @@
 	<constant name="struts.custom.i18n.resources" value="global" />
 	<!-- Setting the action extension to "" causes issues with css/js as Struts will try to serve these as actions -->
 	<constant name="struts.action.extension" value="," />
-
+	<constant name="struts.ui.theme" value="simple" />
+	
 	<package name="johanetfr" namespace="/" extends="struts-default">
 		<result-types>
 			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
