@@ -38,6 +38,10 @@
 		<action name="index" class="fr.johanet.struts2showcase.action.IndexAction">
 			<result name="success" type="tiles">default</result>
 		</action>
+		
+		<action name="add" class="fr.johanet.struts2showcase.action.IndexAction" method="add">
+			<result name="success" type="tiles">default</result>
+		</action>
 
 	</package>
 	<include file="struts/struts-home.xml"></include>
