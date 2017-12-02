@@ -11,12 +11,10 @@ public class AddAction extends ActionSupport {
 	private Product product;
 
 	public String execute() throws Exception {
-
 		return SUCCESS;
 	}
 
 	public String add() throws Exception {
-		String toast = product.getName();
 		return SUCCESS;
 	}
 

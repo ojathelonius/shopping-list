@@ -9,8 +9,4 @@ public class HomeAction extends ActionSupport {
 	public String execute() throws Exception {
 		return SUCCESS;
 	}
-
-	public String list() throws Exception {
-		return SUCCESS;
-	}
 }

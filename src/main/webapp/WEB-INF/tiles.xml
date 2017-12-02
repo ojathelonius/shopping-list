@@ -44,6 +44,12 @@
 		<put-attribute name="body" value="/common/product/add-product.jsp" />
 	</definition>
 
+	<!-- VIEW A PRODUCT -->
+	<definition name="view-product" extends="default">
+		<put-attribute name="title" value="View a product" type="string" cascade="true" />
+		<put-attribute name="body" value="/common/product/view-product.jsp" />
+	</definition>
+
 	<!-- LIST OF PRODUCTS -->
 	<definition name="list-product" extends="default">
 		<put-attribute name="title" value="List of products" type="string" cascade="true" />

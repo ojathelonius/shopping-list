@@ -8,13 +8,17 @@
 		<result-types>
 			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
 		</result-types>
-		<default-action-ref name="add" />
+		<default-action-ref name="init"/>
 		
-		<action name="add" class="fr.johanet.struts2showcase.action.product.AddAction" method="execute">
+		<action name="init" class="fr.johanet.struts2showcase.action.product.AddAction">
 			<result name="success" type="tiles">add-product</result>
 		</action>
 		
-		<action name="list" class="fr.johanet.struts2showcase.action.product.ListAction" method="execute">
+		<action name="add" class="fr.johanet.struts2showcase.action.product.AddAction">
+			<result name="success" type="tiles">view-product</result>
+		</action>
+		
+		<action name="list" class="fr.johanet.struts2showcase.action.product.ListAction">
 			<result name="success" type="tiles">list-product</result>
 		</action>
 		
