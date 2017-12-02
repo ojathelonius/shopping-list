@@ -13,6 +13,10 @@
 <title><tiles:insertAttribute name="title"
 		defaultValue="Missing title !" /></title>
 
+<%--  Viewport definition for mobiles --%>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <%-- Favicon --%>
 <s:set var="favicon" value="%{#attr.favicon}" />
 <link href="<s:url value="%{favicon}"/>" rel="shortcut icon"
