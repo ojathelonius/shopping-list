@@ -8,6 +8,7 @@
 <tiles:importAttribute name="head" />
 <tiles:importAttribute name="header" />
 <tiles:importAttribute name="body" />
+<tiles:importAttribute name="footer" />
 
 <html>
 <%--  Meta data, CSS/JS loaders --%>
@@ -15,5 +16,6 @@
 <body>
 	<tiles:insertAttribute name="header" />
 	<tiles:insertAttribute name="body" />
+	<tiles:insertAttribute name="footer" />
 </body>
 </html>

@@ -2,6 +2,74 @@ body, html {
   height: 100%;
 }
 
-.oi {
+body {
+  background: #ECE9E6;
+  background: -webkit-linear-gradient(to top, white, #ece9e6);
+  background: linear-gradient(to top, white, #ece9e6);
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.ion {
   margin-right: 8px;
+}
+
+.btn {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn-blood-red {
+  color: #fff;
+  background-color: #710000;
+  border-color: #710000;
+}
+.btn-blood-red:hover {
+  background-color: #580000;
+}
+
+.stickyFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #710000;
+  color: #ffffff;
+}
+.stickyFooter a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+.stickyFooter a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.blood-red {
+  background-color: #710000;
+}
+
+.madeWith {
+  list-style: none;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #212529;
+}
+.madeWith > li:first-child {
+  font-size: 1.8em;
+}
+.madeWith a {
+  color: #710000;
+  text-decoration: none;
+  background-color: transparent;
+}
+.madeWith a:hover {
+  color: #212529;
+  font-weight: 400;
 }

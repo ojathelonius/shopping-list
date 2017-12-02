@@ -1,9 +1,9 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark blood-red">
 	<a class="navbar-brand" href="<s:url action="home" namespace="/" />"><span
-		class="oi oi-cart" title="Shopping list" aria-hidden="true"></span>Shopping
+		class="ion ion-android-cart" title="Shopping list" aria-hidden="true"></span>Shopping
 		list</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
