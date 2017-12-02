@@ -8,6 +8,7 @@
 	<definition name="default" template="/common/template/default.jsp">
 
 		<put-attribute name="title" value="Home" type="string" cascade="true" />
+		<put-attribute name="favicon" value="/images/cart-6x.png" type="string" cascade="true" />
 		<put-attribute name="header" value="/common/template/header.jsp" />
 		<put-attribute name="head" value="/common/template/head.jsp" />
 
@@ -15,6 +16,7 @@
 		<put-list-attribute name="cssList" cascade="true">
 			<add-attribute value="/css/lib/bootstrap.min.css" />
 			<add-attribute value="/css/lib/tether.min.css" />
+			<add-attribute value="/css/lib/open-iconic-bootstrap.min.css" />
 			<add-attribute value="/css/default.css" />
 		</put-list-attribute>
 
@@ -22,7 +24,8 @@
 		<put-list-attribute name="jsList" cascade="true">
 			<add-attribute value="/js/lib/jquery.min.js" />
 			<add-attribute value="/js/lib/tether.min.js" />
-			<add-attribute value="/js/lib/bootstrap.min.js" />
+			<add-attribute value="/js/lib/bootstrap.bundle.min.js" />
+			<add-attribute value="/js/tabHandler.js" />
 		</put-list-attribute>
 	</definition>
 

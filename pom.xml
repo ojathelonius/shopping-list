@@ -51,35 +51,32 @@
 	</dependencies>
 	<build>
 		<finalName>struts2showcase</finalName>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>nl.geodienstencentrum.maven</groupId>
-					<artifactId>sass-maven-plugin</artifactId>
-					<version>${sass-maven-plugin.version}</version>
-					<executions>
-						<execution>
-							<id>generate-css</id>
-							<phase>generate-resources</phase>
-							<goals>
-								<goal>update-stylesheets</goal>
-							</goals>
-							<configuration>
-								<sassSourceDirectory>${basedir}/src/main/webapp/sass</sassSourceDirectory>
-								<destination>${basedir}/src/main/webapp/css</destination>
-								<sassOptions>
-									<unix_newlines>true</unix_newlines>
-									<cache>false</cache>
-									<always_update>true</always_update>
-									<style>:expanded</style>
-									<sourcemap>:none</sourcemap>
-								</sassOptions>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.jasig.maven</groupId>
+				<artifactId>sass-maven-plugin</artifactId>
+				<version>1.1.1</version>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>update-stylesheets</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<sassSourceDirectory>${basedir}/src/main/webapp/sass</sassSourceDirectory>
+					<destination>${basedir}/src/main/webapp/css</destination>
+					<sassOptions>
+						<unix_newlines>true</unix_newlines>
+						<cache>false</cache>
+						<always_update>true</always_update>
+						<style>:expanded</style>
+						<sourcemap>:none</sourcemap>
+					</sassOptions>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 </project>
