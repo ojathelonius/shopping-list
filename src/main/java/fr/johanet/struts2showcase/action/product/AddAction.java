@@ -1,10 +1,10 @@
-package fr.johanet.struts2showcase.action;
+package fr.johanet.struts2showcase.action.product;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 import fr.johanet.struts2showcase.model.Product;
 
-public class IndexAction extends ActionSupport {
+public class AddAction extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
 

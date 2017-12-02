@@ -3,28 +3,51 @@
         "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-
+	<!-- DEFAULT SETTINGS FOR MOST WEB PAGES -->
 	<!-- Cascade parameter makes the value available to nested classes -->
-	<definition name="default" template="/WEB-INF/tiles/default.jsp">
+	<definition name="default" template="/common/template/default.jsp">
+
 		<put-attribute name="title" value="Home" type="string" cascade="true" />
-		<put-attribute name="header" value="/WEB-INF/tiles/template/header.jsp" />
-		<put-attribute name="head" value="/WEB-INF/tiles/template/head.jsp" />
-		<put-attribute name="body" value="/WEB-INF/tiles/template/body.jsp" />
+		<put-attribute name="header" value="/common/template/header.jsp" />
+		<put-attribute name="head" value="/common/template/head.jsp" />
 
 		<!-- CSS -->
 		<put-list-attribute name="cssList" cascade="true">
-			<add-attribute value="/css/lib/bootstrap.min.css" /> <add-attribute value="/css/lib/tether.min.css" /> <add-attribute value="/css/default.css" />
+			<add-attribute value="/css/lib/bootstrap.min.css" />
+			<add-attribute value="/css/lib/tether.min.css" />
+			<add-attribute value="/css/default.css" />
 		</put-list-attribute>
 
 		<!-- JS -->
 		<put-list-attribute name="jsList" cascade="true">
 			<add-attribute value="/js/lib/jquery.min.js" />
-			<add-attribute value="/js/lib/tether.min.js" /> <add-attribute value="/js/lib/bootstrap.min.js" />
+			<add-attribute value="/js/lib/tether.min.js" />
+			<add-attribute value="/js/lib/bootstrap.min.js" />
 		</put-list-attribute>
 	</definition>
 
+	<!-- HOME PAGE -->
+	<definition name="home" extends="default">
+		<put-attribute name="title" value="Home" type="string" cascade="true" />
+		<put-attribute name="body" value="/common/home/home.jsp" />
+	</definition>
+
+	<!-- ERROR PAGE -->
 	<definition name="error" extends="default">
-		<put-attribute name="body" value="/WEB-INF/tiles/template/error.jsp" />
+		<put-attribute name="title" value="Error" type="string" cascade="true" />
+		<put-attribute name="body" value="/common/error/error.jsp" />
+	</definition>
+
+	<!-- ADD A PRODUCT -->
+	<definition name="add-product" extends="default">
+		<put-attribute name="title" value="Add a product" type="string" cascade="true" />
+		<put-attribute name="body" value="/common/product/add-product.jsp" />
+	</definition>
+
+	<!-- LIST OF PRODUCTS -->
+	<definition name="list-product" extends="default">
+		<put-attribute name="title" value="List of products" type="string" cascade="true" />
+		<put-attribute name="body" value="/common/product/list-products.jsp" />
 	</definition>
 
 </tiles-definitions>

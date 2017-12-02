@@ -4,12 +4,13 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-	<package name="home" extends="struts-default" namespace="/home">
+	<package name="home" namespace="/" extends="struts-default">
 		<result-types>
 			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
 		</result-types>
-		<action name="helloworld">
-			<result name="success" type="tiles">default</result>
+		<default-action-ref name="home" />
+		<action name="home" class="fr.johanet.struts2showcase.action.home.HomeAction" method="execute">
+			<result name="success" type="tiles">home</result>
 		</action>
 	</package>
 </struts>
