@@ -13,7 +13,7 @@
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
 			<a class="nav-item nav-link"
-				href="<s:url action="add" namespace="/product" />">Add a product</a>
+				href="<s:url action="new" namespace="/product" />">Add a product</a>
 			<a class="nav-item nav-link"
 				href="<s:url action="list" namespace="/product"/>">List of
 				products</a>

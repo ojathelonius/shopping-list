@@ -10,14 +10,17 @@
 		</result-types>
 		<default-action-ref name="add"/>
 		
-		<action name="add" class="fr.johanet.struts2showcase.action.product.AddAction">
+		<!-- Display the product add page -->
+		<action name="new" class="fr.johanet.struts2showcase.action.product.AddAction">
 			<result name="success" type="tiles">add-product</result>
 		</action>
 		
-		<action name="view" class="fr.johanet.struts2showcase.action.product.AddAction">
+		<!-- Add the product -->
+		<action name="add" class="fr.johanet.struts2showcase.action.product.AddAction" method="add">
 			<result name="success" type="tiles">view-product</result>
 		</action>
 		
+		<!-- List all the products -->
 		<action name="list" class="fr.johanet.struts2showcase.action.product.ListAction">
 			<result name="success" type="tiles">list-product</result>
 		</action>
