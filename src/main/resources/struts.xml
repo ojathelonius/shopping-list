@@ -10,8 +10,6 @@
 	<!-- Setting the action extension to "" causes issues with css/js as Struts will try to serve these as actions -->
 	<constant name="struts.action.extension" value="," />
 	<constant name="struts.ui.theme" value="simple" />
-	<constant name="struts.objectFactory"
-          value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
 	
 	<package name="struts2showcase" namespace="/" extends="struts-default">
 		<result-types>
